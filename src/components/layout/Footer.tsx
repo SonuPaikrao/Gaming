@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom'
 import { 
-  Gamepad2, 
   Twitter, 
   Instagram, 
   Youtube, 
@@ -11,7 +10,6 @@ import {
 } from 'lucide-react'
 
 const Footer = () => {
-  const currentYear = new Date().getFullYear()
 
   const footerLinks = {
     'Quick Links': [

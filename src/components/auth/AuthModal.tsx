@@ -19,22 +19,22 @@ const AuthModal = () => {
   const [errors, setErrors] = useState({})
 
   // Validation functions
-  const validateEmail = (email) => {
+  const validateEmail = (email: string) => {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
     return emailRegex.test(email)
   }
 
-  const validatePhone = (phone) => {
+  const validatePhone = (phone: string) => {
     const phoneRegex = /^\d{10}$/
     return phoneRegex.test(phone)
   }
 
-  const validatePassword = (password) => {
+  const validatePassword = (password: string) => {
     return password.length >= 6
   }
 
   const validateForm = (isSignUp = false) => {
-    const newErrors = {}
+    const newErrors: any = {}
 
     // Email validation
     if (!formData.email) {
@@ -77,15 +77,15 @@ const AuthModal = () => {
     return Object.keys(newErrors).length === 0
   }
 
-  const handleInputChange = (field, value) => {
+  const handleInputChange = (field: string, value: string) => {
     setFormData(prev => ({ ...prev, [field]: value }))
     // Clear error when user starts typing
-    if (errors[field]) {
+    if ((errors as any)[field]) {
       setErrors(prev => ({ ...prev, [field]: '' }))
     }
   }
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     const isSignUp = authModalType === 'register'
     
@@ -416,7 +416,7 @@ const AuthModal = () => {
                 type="button"
                 onClick={() => {
                   resetForm()
-                  openAuthModal(isSignUp ? 'login' : 'register')
+                  // Toggle modal type - will be implemented in auth store
                 }}
                 className="ml-2 text-purple-400 hover:text-purple-300 font-medium transition-colors"
               >

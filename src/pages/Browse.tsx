@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 import { 
   Search, 
-  Filter, 
   Star, 
   Download, 
   Grid,
@@ -14,9 +13,7 @@ import { useGameStore } from '@/store/gameStore'
 
 const Browse = () => {
   const [viewMode, setViewMode] = useState<'grid' | 'list'>('grid')
-  const [showFilters, setShowFilters] = useState(false)
   const { 
-    games, 
     searchTerm, 
     selectedGenre, 
     selectedPlatform,

@@ -1,19 +1,14 @@
 import { useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
-import { motion } from 'framer-motion'
 import { 
   Search, 
   User, 
-  Menu, 
-  X, 
-  Gamepad2,
   LogIn,
   UserPlus
 } from 'lucide-react'
 import { useAuthStore } from '@/store/authStore'
 
 const Navbar = () => {
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
   const location = useLocation()
   const { user, isAuthenticated, logout, openAuthModal } = useAuthStore()
 

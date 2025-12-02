@@ -31,14 +31,14 @@ const BottomNavigation = () => {
     }
   ]
 
-  const handleNavClick = (item) => {
+  const handleNavClick = (item: any) => {
     if (item.requireAuth && !isAuthenticated) {
       openAuthModal('login')
       return
     }
   }
 
-  const isActive = (path) => {
+  const isActive = (path: string) => {
     return location.pathname === path
   }
 

@@ -31,13 +31,9 @@ const Navbar = () => {
           >
             <div className="w-16 h-16 rounded-xl overflow-hidden group-hover:scale-105 transition-all duration-300">
               <img 
-                src="/assets/images/Favicon.png" 
+                src="/images/Favicon.png" 
                 alt="Gaming Logo" 
                 className="w-full h-full object-contain"
-                onError={(e) => {
-                  console.log('Logo failed to load:', e.target.src);
-                  e.target.style.display = 'none';
-                }}
               />
             </div>
           </Link>

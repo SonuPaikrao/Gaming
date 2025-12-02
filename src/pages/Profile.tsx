@@ -33,7 +33,7 @@ const Profile = () => {
     xp: 15750,
     maxXp: 20000,
     rank: "Diamond Elite",
-    avatar: "/assets/images/profile-header.jpg",
+    avatar: "/images/profile-header.jpg",
     
     stats: {
       gamesPlayed: 247,

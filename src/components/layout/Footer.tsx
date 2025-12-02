@@ -48,13 +48,9 @@ const Footer = () => {
             <Link to="/" className="flex items-center mb-6">
               <div className="w-16 h-16 rounded-xl overflow-hidden">
                 <img 
-                  src="/assets/images/Favicon.png" 
+                  src="/images/Favicon.png" 
                   alt="Gaming Logo" 
                   className="w-full h-full object-contain"
-                  onError={(e) => {
-                    console.log('Footer logo failed to load:', e.target.src);
-                    e.target.style.display = 'none';
-                  }}
                 />
               </div>
             </Link>

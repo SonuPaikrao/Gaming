@@ -104,7 +104,7 @@ const AuthModal = () => {
           password: formData.password,
           username: "Sonu Rao", // Always use static name
           phone: formData.phone,
-          avatar: `/assets/images/profile-header.jpg`,
+          avatar: `/images/profile-header.jpg`,
           joinDate: new Date().toISOString().split('T')[0],
           // Static profile data
           bio: "Gaming enthusiast and competitive player",
@@ -144,7 +144,7 @@ const AuthModal = () => {
         const userData = {
           email: formData.email,
           username: "Sonu Rao", // Static username
-          avatar: `/assets/images/profile-header.jpg`,
+          avatar: `/images/profile-header.jpg`,
           // Same static data as signup
           bio: "Gaming enthusiast and competitive player",
           location: "Pune, Maharashtra", 

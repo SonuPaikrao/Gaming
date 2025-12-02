@@ -8,10 +8,8 @@ import {
   Share2,
   Calendar,
   Clock,
-  User,
   Plus,
   Search,
-  Filter,
   ArrowRight
 } from 'lucide-react'
 

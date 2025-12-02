@@ -5,16 +5,12 @@ import {
   Users, 
   Eye,
   Heart,
-  MessageSquare,
   Share2,
   Search,
-  Filter,
   Grid,
   List,
   Radio,
-  Star,
-  Clock,
-  Gamepad2
+  Star
 } from 'lucide-react'
 
 const Streams = () => {

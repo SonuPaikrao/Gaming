@@ -3,8 +3,7 @@ import {
   User, 
   MapPin, 
   Calendar, 
-  Trophy, 
-  Star,
+  Trophy,
   Users,
   Clock,
   Target,
@@ -15,8 +14,7 @@ import {
   Phone,
   Mail,
   Gamepad2,
-  Crown,
-  Medal
+  Crown
 } from 'lucide-react'
 import { useAuthStore } from '@/store/authStore'
 

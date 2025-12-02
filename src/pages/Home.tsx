@@ -16,7 +16,7 @@ import { useGameStore } from '@/store/gameStore'
 import { useAuthStore } from '@/store/authStore'
 
 const Home = () => {
-  const { featuredGames, popularGames, fetchFeaturedGames, fetchPopularGames } = useGameStore()
+  const { featuredGames, fetchFeaturedGames, fetchPopularGames } = useGameStore()
   const { isAuthenticated, user } = useAuthStore()
 
   useEffect(() => {

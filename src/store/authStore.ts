@@ -17,40 +17,7 @@ interface AuthState {
   closeAuthModal: () => void
 }
 
-interface RegisterData {
-  username: string
-  email: string
-  password: string
-}
-
-// Mock user data for development
-const mockUser: User = {
-  id: '1',
-  username: 'GamerPro',
-  email: 'gamer@example.com',
-  avatar: 'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=400',
-  level: 42,
-  xp: 8750,
-  reputation: 1250,
-  rank: 'Elite Gamer',
-  isOnline: true,
-  lastSeen: new Date().toISOString(),
-  games: [],
-  achievements: [],
-  stats: {
-    gamesPlayed: 156,
-    hoursPlayed: 2340,
-    tournamentsWon: 23,
-    friendsCount: 89,
-    postsCount: 45,
-    likesReceived: 342
-  },
-  social: {
-    twitch: 'gamerpro',
-    discord: 'GamerPro#1234',
-    steam: 'gamerpro_steam'
-  }
-}
+// Auth store implementation
 
 export const useAuthStore = create<AuthState>()(
   persist(

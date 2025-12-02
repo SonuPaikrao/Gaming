@@ -315,7 +315,7 @@ const AuthModal = () => {
                       errors.phone ? 'border-red-500' : 'border-white/10'
                     }`}
                     placeholder="10 digit phone number"
-                    maxLength="10"
+                    maxLength={10}
                   />
                 </div>
                 {errors.phone && (

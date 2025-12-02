@@ -16,7 +16,7 @@ const AuthModal = () => {
   const [showPassword, setShowPassword] = useState(false)
   const [showConfirmPassword, setShowConfirmPassword] = useState(false)
   const [isLoading, setIsLoading] = useState(false)
-  const [errors, setErrors] = useState({})
+  const [errors, setErrors] = useState<any>({})
 
   // Validation functions
   const validateEmail = (email: string) => {
@@ -80,8 +80,8 @@ const AuthModal = () => {
   const handleInputChange = (field: string, value: string) => {
     setFormData(prev => ({ ...prev, [field]: value }))
     // Clear error when user starts typing
-    if ((errors as any)[field]) {
-      setErrors(prev => ({ ...prev, [field]: '' }))
+    if (errors[field]) {
+      setErrors((prev: any) => ({ ...prev, [field]: '' }))
     }
   }
 

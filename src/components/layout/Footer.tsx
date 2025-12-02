@@ -51,6 +51,10 @@ const Footer = () => {
                   src="/assets/images/Favicon.png" 
                   alt="Gaming Logo" 
                   className="w-full h-full object-contain"
+                  onError={(e) => {
+                    console.log('Footer logo failed to load:', e.target.src);
+                    e.target.style.display = 'none';
+                  }}
                 />
               </div>
             </Link>

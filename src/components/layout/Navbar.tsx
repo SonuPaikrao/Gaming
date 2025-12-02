@@ -34,6 +34,10 @@ const Navbar = () => {
                 src="/assets/images/Favicon.png" 
                 alt="Gaming Logo" 
                 className="w-full h-full object-contain"
+                onError={(e) => {
+                  console.log('Logo failed to load:', e.target.src);
+                  e.target.style.display = 'none';
+                }}
               />
             </div>
           </Link>
